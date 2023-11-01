@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Registration</title>
+    <link rel="stylesheet" href="complaint.css">
+</head>
+<body>
+    <header>
+        <h1>Complaint Registration</h1>
+    </header>
+
+    <main>
+        <form id="complaintForm">
+            <div class="form-group">
+                <label for="complaintTitle">Complaint Title</label>
+                <input type="text" id="complaintTitle" name="complaintTitle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="complaintType">Complaint Type</label>
+                <select id="complaintType" name="complaintType" required>
+                    <option value="Maintenance">Maintenance</option>
+                    <option value="Security">Security</option>
+                    <option value="Community">Community</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="complaintDescription">Complaint Description</label>
+                <textarea id="complaintDescription" name="complaintDescription" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="complaintImage">Attach Image</label>
+                <input type="file" id="complaintImage" name="complaintImage" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Complaint</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
